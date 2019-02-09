@@ -18,7 +18,7 @@ variable_dt = 0
 
 [physics]
 scale = 0.02
-debug = 0
+debug = 1
 
 [script]
 shared_state = 1

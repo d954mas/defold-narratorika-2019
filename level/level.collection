@@ -197,6 +197,54 @@ instances {
     z: 1.0
   }
 }
+instances {
+  id: "walking_enemy"
+  prototype: "/platformer_creation_kit/building_blocks/gameobjects/enemies/walking_enemy.go"
+  position {
+    x: 1664.0
+    y: 101.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  component_properties {
+    id: "ai"
+    properties {
+      id: "follow_player"
+      value: "true"
+      type: PROPERTY_TYPE_BOOLEAN
+    }
+  }
+  scale3 {
+    x: -1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "particle_factory"
+  prototype: "/platformer_creation_kit/building_blocks/gameobjects/particles/particle_factory.go"
+  position {
+    x: 347.248
+    y: 484.64386
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
 scale_along_z: 0
 embedded_instances {
   id: "tilemap"
