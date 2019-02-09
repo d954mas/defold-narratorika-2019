@@ -271,7 +271,6 @@ local function handle_obstacle_contact_defold(self, data)
 	    
 	    proj = vmath.dot(self.velocity, data.normal)
 	    if proj < 0 then
-			proj = proj < -11 and 0 or proj
 	        self.velocity = self.velocity - proj * data.normal
 	    end
     end

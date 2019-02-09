@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="65936647-7dd1-4e5f-a3e0-fdaf03e3a410" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game.project" beforeDir="false" afterPath="$PROJECT_DIR$/game.project" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/level/level.collection" beforeDir="false" afterPath="$PROJECT_DIR$/level/level.collection" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platformer_creation_kit/building_blocks/gameobjects/enemies/walking_enemy.go" beforeDir="false" afterPath="$PROJECT_DIR$/platformer_creation_kit/building_blocks/gameobjects/enemies/walking_enemy.go" afterDir="false" />
+    <list default="true" id="65936647-7dd1-4e5f-a3e0-fdaf03e3a410" name="Default Changelist" comment="" />
+    <list id="a4f980d7-8d2f-4679-af52-e59bcb30816e" name="Revert: fixed enemy collisions" comment="">
       <change beforePath="$PROJECT_DIR$/platformer_creation_kit/framework/scripts/movement.script" beforeDir="false" afterPath="$PROJECT_DIR$/platformer_creation_kit/framework/scripts/movement.script" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,8 +16,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/platformer_creation_kit/framework/scripts/movement.script">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="404">
-              <caret line="273" column="14" selection-start-line="273" selection-start-column="14" selection-end-line="273" selection-end-column="14" />
+            <state relative-caret-position="388">
+              <caret line="271" selection-start-line="271" selection-end-line="271" />
             </state>
           </provider>
         </entry>
@@ -56,7 +53,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -74,6 +70,7 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -98,17 +95,18 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="65936647-7dd1-4e5f-a3e0-fdaf03e3a410" name="Default Changelist" comment="" />
+      <changelist id="a4f980d7-8d2f-4679-af52-e59bcb30816e" name="Revert: fixed enemy collisions" comment="" />
       <created>1549484207203</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1549484207203</updated>
       <workItem from="1549484208820" duration="1758000" />
-      <workItem from="1549710390455" duration="7287000" />
+      <workItem from="1549710390455" duration="7961000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9045000" />
+    <option name="totallyTimeSpent" value="9719000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1934" height="1054" extended-state="6" />
@@ -132,7 +130,7 @@
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info active="true" anchor="bottom" id="Version Control" order="9" visible="true" weight="0.32984293" />
       <window_info anchor="bottom" id="Database Changes" order="10" />
-      <window_info anchor="bottom" id="Terminal" order="11" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32984293" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -147,11 +145,37 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/platformer_creation_kit/framework/scripts/movement.script">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="404">
-          <caret line="273" column="14" selection-start-line="273" selection-start-column="14" selection-end-line="273" selection-end-column="14" />
+        <state relative-caret-position="388">
+          <caret line="271" selection-start-line="271" selection-end-line="271" />
         </state>
       </provider>
     </entry>

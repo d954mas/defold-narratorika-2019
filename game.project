@@ -17,7 +17,7 @@ high_dpi = 0
 variable_dt = 0
 
 [physics]
-scale = 0.02
+scale = 0.1
 debug = 1
 
 [script]
