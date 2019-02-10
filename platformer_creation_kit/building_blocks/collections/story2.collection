@@ -564,39 +564,6 @@ instances {
   }
 }
 instances {
-  id: "door"
-  prototype: "/platformer_creation_kit/building_blocks/gameobjects/doors/door.go"
-  position {
-    x: 1121.7067
-    y: 75.33412
-    z: 0.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  component_properties {
-    id: "script"
-    properties {
-      id: "is_locked"
-      value: "true"
-      type: PROPERTY_TYPE_BOOLEAN
-    }
-    properties {
-      id: "is_open"
-      value: "false"
-      type: PROPERTY_TYPE_BOOLEAN
-    }
-  }
-  scale3 {
-    x: 0.75
-    y: 0.75
-    z: 0.75
-  }
-}
-instances {
   id: "health_hud"
   prototype: "/platformer_creation_kit/building_blocks/gameobjects/gui_gameobjects/player_hud.go"
   position {
@@ -620,8 +587,8 @@ instances {
   id: "hero"
   prototype: "/platformer_creation_kit/building_blocks/gameobjects/hero/hero.go"
   position {
-    x: -3945.9255
-    y: 1491.5696
+    x: 2756.074
+    y: 257.57
     z: 0.0
   }
   rotation {

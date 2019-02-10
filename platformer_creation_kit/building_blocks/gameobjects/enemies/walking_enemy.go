@@ -14,13 +14,18 @@ components {
   }
   properties {
     id: "collision_box_center"
-    value: "-3.087, -13.11977, 0.0"
+    value: "-0.6800842, 101.6239, 0.0"
     type: PROPERTY_TYPE_VECTOR3
   }
   properties {
     id: "collision_box_size"
-    value: "157.37172, 239.17735, 0.0"
+    value: "169.70687866210938, 203.07913208007812, 0.0"
     type: PROPERTY_TYPE_VECTOR3
+  }
+  properties {
+    id: "patrol"
+    value: "true"
+    type: PROPERTY_TYPE_BOOLEAN
   }
 }
 components {

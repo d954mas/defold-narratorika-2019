@@ -1,10 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="65936647-7dd1-4e5f-a3e0-fdaf03e3a410" name="Default Changelist" comment="" />
-    <list id="a4f980d7-8d2f-4679-af52-e59bcb30816e" name="Revert: fixed enemy collisions" comment="">
+    <list default="true" id="65936647-7dd1-4e5f-a3e0-fdaf03e3a410" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/level/level.collection" beforeDir="false" afterPath="$PROJECT_DIR$/level/level.collection" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/level/tiles.tilemap" beforeDir="false" afterPath="$PROJECT_DIR$/level/tiles.tilemap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platformer_creation_kit/building_blocks/collections/story2.collection" beforeDir="false" afterPath="$PROJECT_DIR$/platformer_creation_kit/building_blocks/collections/story2.collection" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platformer_creation_kit/building_blocks/gameobjects/enemies/walking_enemy.go" beforeDir="false" afterPath="$PROJECT_DIR$/platformer_creation_kit/building_blocks/gameobjects/enemies/walking_enemy.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platformer_creation_kit/framework/scripts/enemy_ai.script" beforeDir="false" afterPath="$PROJECT_DIR$/platformer_creation_kit/framework/scripts/enemy_ai.script" afterDir="false" />
+    </list>
+    <list id="fbac298d-8032-4ddc-a54b-32e67ceb83b1" name="Revert: fixed collisions" comment="">
       <change beforePath="$PROJECT_DIR$/platformer_creation_kit/framework/scripts/movement.script" beforeDir="false" afterPath="$PROJECT_DIR$/platformer_creation_kit/framework/scripts/movement.script" afterDir="false" />
     </list>
+    <list id="a4f980d7-8d2f-4679-af52-e59bcb30816e" name="Revert: fixed enemy collisions" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +24,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/platformer_creation_kit/framework/scripts/movement.script">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="388">
-              <caret line="271" selection-start-line="271" selection-end-line="271" />
+            <state relative-caret-position="516">
+              <caret line="273" column="12" selection-start-line="273" selection-start-column="12" selection-end-line="273" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -29,6 +37,9 @@
       <find>600</find>
       <find>&lt; 0</find>
       <find>defold</find>
+      <find>ray_c</find>
+      <find>obstacle_in_front</find>
+      <find>ray_cas</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -38,6 +49,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/game.project" />
+        <option value="$PROJECT_DIR$/platformer_creation_kit/building_blocks/gameobjects/enemies/walking_enemy.go" />
+        <option value="$PROJECT_DIR$/platformer_creation_kit/framework/scripts/enemy_ai.script" />
         <option value="$PROJECT_DIR$/platformer_creation_kit/framework/scripts/movement.script" />
       </list>
     </option>
@@ -64,6 +77,39 @@
               <item name="narratorika 2019" type="b2602c69:ProjectViewProjectNode" />
               <item name="narratorika 2019" type="462c0819:PsiDirectoryNode" />
               <item name="platformer_creation_kit" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="narratorika 2019" type="b2602c69:ProjectViewProjectNode" />
+              <item name="narratorika 2019" type="462c0819:PsiDirectoryNode" />
+              <item name="platformer_creation_kit" type="462c0819:PsiDirectoryNode" />
+              <item name="content" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="narratorika 2019" type="b2602c69:ProjectViewProjectNode" />
+              <item name="narratorika 2019" type="462c0819:PsiDirectoryNode" />
+              <item name="platformer_creation_kit" type="462c0819:PsiDirectoryNode" />
+              <item name="framework" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="narratorika 2019" type="b2602c69:ProjectViewProjectNode" />
+              <item name="narratorika 2019" type="462c0819:PsiDirectoryNode" />
+              <item name="platformer_creation_kit" type="462c0819:PsiDirectoryNode" />
+              <item name="framework" type="462c0819:PsiDirectoryNode" />
+              <item name="Characters" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="narratorika 2019" type="b2602c69:ProjectViewProjectNode" />
+              <item name="narratorika 2019" type="462c0819:PsiDirectoryNode" />
+              <item name="platformer_creation_kit" type="462c0819:PsiDirectoryNode" />
+              <item name="framework" type="462c0819:PsiDirectoryNode" />
+              <item name="gameobjects" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="narratorika 2019" type="b2602c69:ProjectViewProjectNode" />
+              <item name="narratorika 2019" type="462c0819:PsiDirectoryNode" />
+              <item name="platformer_creation_kit" type="462c0819:PsiDirectoryNode" />
+              <item name="framework" type="462c0819:PsiDirectoryNode" />
+              <item name="scripts" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -96,17 +142,18 @@
     <task active="true" id="Default" summary="Default task">
       <changelist id="65936647-7dd1-4e5f-a3e0-fdaf03e3a410" name="Default Changelist" comment="" />
       <changelist id="a4f980d7-8d2f-4679-af52-e59bcb30816e" name="Revert: fixed enemy collisions" comment="" />
+      <changelist id="fbac298d-8032-4ddc-a54b-32e67ceb83b1" name="Revert: fixed collisions" comment="" />
       <created>1549484207203</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1549484207203</updated>
       <workItem from="1549484208820" duration="1758000" />
-      <workItem from="1549710390455" duration="7961000" />
+      <workItem from="1549710390455" duration="11390000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9719000" />
+    <option name="totallyTimeSpent" value="13148000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1934" height="1054" extended-state="6" />
@@ -172,10 +219,17 @@
     </option>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/platformer_creation_kit/framework/scripts/enemy_ai.script">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="334">
+          <caret line="106" column="25" selection-start-line="106" selection-start-column="25" selection-end-line="106" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/platformer_creation_kit/framework/scripts/movement.script">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
-          <caret line="271" selection-start-line="271" selection-end-line="271" />
+        <state relative-caret-position="516">
+          <caret line="273" column="12" selection-start-line="273" selection-start-column="12" selection-end-line="273" selection-end-column="12" />
         </state>
       </provider>
     </entry>
