@@ -79,7 +79,7 @@ function update(self, dt)
 	    	ray_pos = my_pos + vmath.vector3(x, y, 0)
 			ray_end = my_pos + vmath.vector3(x + ray_length * dir_x, y, 0)
 			physics.ray_cast(ray_pos, ray_end, self.raycast_groups, 0)
-			msg.post("@render:", "draw_line", { start_point = ray_pos, end_point = ray_end, color = vmath.vector4(0.25, 0.25,0.25, 1) } )
+		--	msg.post("@render:", "draw_line", { start_point = ray_pos, end_point = ray_end, color = vmath.vector4(0.25, 0.25,0.25, 1) } )
 	    end
     end
     

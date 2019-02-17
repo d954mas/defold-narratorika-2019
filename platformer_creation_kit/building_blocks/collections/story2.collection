@@ -597,24 +597,6 @@ instances {
     z: 0.0
     w: 1.0
   }
-  component_properties {
-    id: "class"
-    properties {
-      id: "class"
-      value: "mage"
-      type: PROPERTY_TYPE_HASH
-    }
-    properties {
-      id: "missile_delay"
-      value: "0.1"
-      type: PROPERTY_TYPE_NUMBER
-    }
-    properties {
-      id: "missile_speed"
-      value: "600.0"
-      type: PROPERTY_TYPE_NUMBER
-    }
-  }
   scale3 {
     x: 1.0
     y: 1.0
