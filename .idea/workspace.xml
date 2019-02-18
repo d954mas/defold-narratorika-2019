@@ -2,20 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="65936647-7dd1-4e5f-a3e0-fdaf03e3a410" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/api.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/narratorika 2019.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/narratorika 2019.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game.project" beforeDir="false" afterPath="$PROJECT_DIR$/game.project" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/level/level.collection" beforeDir="false" afterPath="$PROJECT_DIR$/level/level.collection" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/level/tiles.tilemap" beforeDir="false" afterPath="$PROJECT_DIR$/level/tiles.tilemap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platformer_creation_kit/building_blocks/collections/level.collection" beforeDir="false" afterPath="$PROJECT_DIR$/platformer_creation_kit/building_blocks/collections/level.collection" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platformer_creation_kit/building_blocks/collections/story2.collection" beforeDir="false" afterPath="$PROJECT_DIR$/platformer_creation_kit/building_blocks/collections/story2.collection" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platformer_creation_kit/building_blocks/collections/story3.collection" beforeDir="false" afterPath="$PROJECT_DIR$/platformer_creation_kit/building_blocks/collections/story3.collection" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platformer_creation_kit/building_blocks/collections/story4.collection" beforeDir="false" afterPath="$PROJECT_DIR$/platformer_creation_kit/building_blocks/collections/story4.collection" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platformer_creation_kit/building_blocks/gameobjects/enemies/walking_enemy.go" beforeDir="false" afterPath="$PROJECT_DIR$/platformer_creation_kit/building_blocks/gameobjects/enemies/walking_enemy.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platformer_creation_kit/building_blocks/gameobjects/hero/hero.go" beforeDir="false" afterPath="$PROJECT_DIR$/platformer_creation_kit/building_blocks/gameobjects/hero/hero.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platformer_creation_kit/framework/scripts/chest.script" beforeDir="false" afterPath="$PROJECT_DIR$/platformer_creation_kit/framework/scripts/chest.script" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platformer_creation_kit/framework/scripts/enemy_ai.script" beforeDir="false" afterPath="$PROJECT_DIR$/platformer_creation_kit/framework/scripts/enemy_ai.script" afterDir="false" />
     </list>
     <list id="fbac298d-8032-4ddc-a54b-32e67ceb83b1" name="Revert: fixed collisions" comment="" />
     <list id="a4f980d7-8d2f-4679-af52-e59bcb30816e" name="Revert: fixed enemy collisions" comment="" />
@@ -65,7 +52,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="61" />
     <option name="y" value="3" />
     <option name="width" value="1612" />
@@ -170,7 +157,7 @@
     <option name="totallyTimeSpent" value="17362000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="61" y="3" width="1612" height="948" extended-state="0" />
+    <frame x="61" y="3" width="1612" height="948" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27377892" />

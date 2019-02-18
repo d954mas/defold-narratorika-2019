@@ -203,7 +203,7 @@ embedded_components {
   type: "spinemodel"
   data: "spine_scene: \"/platformer_creation_kit/framework/Characters/hero.spinescene\"\n"
   "default_animation: \"Idle\"\n"
-  "skin: \"01 Warrior\"\n"
+  "skin: \"06 Knight\"\n"
   "blend_mode: BLEND_MODE_ALPHA\n"
   "material: \"/builtins/materials/spine.material\"\n"
   ""

@@ -501,7 +501,7 @@ instances {
     w: 1.0
   }
   scale3 {
-    x: -1.0
+    x: 1.0
     y: 1.0
     z: 1.0
   }
@@ -510,7 +510,7 @@ instances {
   id: "box"
   prototype: "/platformer_creation_kit/building_blocks/gameobjects/obstacles/box.go"
   position {
-    x: 2423.0
+    x: 2303.0
     y: 162.0
     z: 0.0
   }
