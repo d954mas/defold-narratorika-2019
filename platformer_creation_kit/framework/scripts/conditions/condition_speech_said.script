@@ -8,6 +8,7 @@ end
 function on_message(self, message_id, message, sender)
     if message_id == hash("speech_ended") then
     	if message.index == self.speech_index then
+    	print("shizzle")
     		local url = msg.url(self.action_url)
     		url.fragment = "script"
     		msg.post(url, "trigger", {})

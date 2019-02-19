@@ -1,3 +1,18 @@
+components {
+  id: "script"
+  component: "/platformer_creation_kit/framework/scripts/background.script"
+  position {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+}
 embedded_components {
   id: "sprite"
   type: "sprite"
@@ -23,11 +38,11 @@ embedded_components {
   type: "sprite"
   data: "tile_set: \"/platformer_creation_kit/framework/atlases/level.atlas\"\n"
   "default_animation: \"cloud 01\"\n"
-  "material: \"/builtins/materials/sprite.material\"\n"
+  "material: \"/platformer_creation_kit/framework/materials/background.material\"\n"
   "blend_mode: BLEND_MODE_ALPHA\n"
   ""
   position {
-    x: -397.76422
+    x: -300097.75
     y: 214.82373
     z: 0.0
   }
@@ -43,11 +58,11 @@ embedded_components {
   type: "sprite"
   data: "tile_set: \"/platformer_creation_kit/framework/atlases/level.atlas\"\n"
   "default_animation: \"cloud 02\"\n"
-  "material: \"/builtins/materials/sprite.material\"\n"
+  "material: \"/platformer_creation_kit/framework/materials/background.material\"\n"
   "blend_mode: BLEND_MODE_ALPHA\n"
   ""
   position {
-    x: 399.2697
+    x: 1000041.0
     y: 246.19034
     z: 0.0
   }
@@ -63,11 +78,11 @@ embedded_components {
   type: "sprite"
   data: "tile_set: \"/platformer_creation_kit/framework/atlases/level.atlas\"\n"
   "default_animation: \"cloud 03\"\n"
-  "material: \"/builtins/materials/sprite.material\"\n"
+  "material: \"/platformer_creation_kit/framework/materials/background.material\"\n"
   "blend_mode: BLEND_MODE_ALPHA\n"
   ""
   position {
-    x: -179.05063
+    x: -1.79E7
     y: 115.57832
     z: 0.0
   }

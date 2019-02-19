@@ -1,6 +1,5 @@
 go.property("max_health", 3)
 go.property("max_health_change_heals", true)
-go.property("player", true)
 
 local change_hp = hash("change_hp")
 local change_max_hp = hash("change_max_hp")

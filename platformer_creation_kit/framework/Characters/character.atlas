@@ -185,9 +185,6 @@ images {
   image: "/platformer_creation_kit/framework/Characters/_ Defold Character Animation Assets/Hair/hair 9 C.png"
 }
 images {
-  image: "/platformer_creation_kit/framework/Characters/_ Defold Character Animation Assets/Hair/hari 1 B.png"
-}
-images {
   image: "/platformer_creation_kit/framework/Characters/_ Defold Character Animation Assets/Hats/Hat 1.png"
 }
 images {
@@ -249,6 +246,9 @@ images {
 }
 images {
   image: "/platformer_creation_kit/framework/Characters/_ Defold Character Animation Assets/Weapons/sword 2.png"
+}
+images {
+  image: "/platformer_creation_kit/framework/Characters/_ Defold Character Animation Assets/Hair/hair 1 B.png"
 }
 margin: 4
 extrude_borders: 0

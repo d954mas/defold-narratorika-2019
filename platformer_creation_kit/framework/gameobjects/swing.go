@@ -80,7 +80,7 @@ embedded_components {
 embedded_components {
   id: "hit1"
   type: "sound"
-  data: "sound: \"/platformer_creation_kit/framework/sounds/arrow_hit2.ogg\"\n"
+  data: "sound: \"/platformer_creation_kit/framework/sounds/parry00.wav\"\n"
   "looping: 0\n"
   "group: \"master\"\n"
   "gain: 1.0\n"
@@ -100,7 +100,7 @@ embedded_components {
 embedded_components {
   id: "hit2"
   type: "sound"
-  data: "sound: \"/platformer_creation_kit/framework/sounds/arrow_hit1.ogg\"\n"
+  data: "sound: \"/platformer_creation_kit/framework/sounds/parry01.wav\"\n"
   "looping: 0\n"
   "group: \"master\"\n"
   "gain: 1.0\n"

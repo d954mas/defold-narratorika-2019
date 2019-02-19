@@ -1,25 +1,5 @@
 name: "default"
 instances {
-  id: "background"
-  prototype: "/platformer_creation_kit/building_blocks/gameobjects/backgrounds/background.go"
-  position {
-    x: 640.0
-    y: 360.0
-    z: 0.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale3 {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-  }
-}
-instances {
   id: "hero"
   prototype: "/platformer_creation_kit/building_blocks/gameobjects/hero/hero.go"
   position {
@@ -220,11 +200,11 @@ instances {
   }
 }
 instances {
-  id: "action_trigger"
-  prototype: "/platformer_creation_kit/building_blocks/gameobjects/triggers/action_trigger.go"
+  id: "walking_enemy"
+  prototype: "/platformer_creation_kit/building_blocks/gameobjects/enemies/walking_enemy.go"
   position {
-    x: 4541.0
-    y: 626.0
+    x: 1664.0
+    y: 101.0
     z: 0.0
   }
   rotation {
@@ -234,42 +214,9 @@ instances {
     w: 1.0
   }
   component_properties {
-    id: "script"
+    id: "ai"
     properties {
-      id: "action_url"
-      value: "/action_open_door"
-      type: PROPERTY_TYPE_URL
-    }
-    properties {
-      id: "destroy_after_trigger"
-      value: "false"
-      type: PROPERTY_TYPE_BOOLEAN
-    }
-  }
-  scale3 {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-  }
-}
-instances {
-  id: "door"
-  prototype: "/platformer_creation_kit/building_blocks/gameobjects/doors/door.go"
-  position {
-    x: 4681.0
-    y: 501.0
-    z: 0.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  component_properties {
-    id: "script"
-    properties {
-      id: "is_locked"
+      id: "patrol"
       value: "true"
       type: PROPERTY_TYPE_BOOLEAN
     }
@@ -281,11 +228,31 @@ instances {
   }
 }
 instances {
-  id: "action_open_door"
-  prototype: "/platformer_creation_kit/building_blocks/gameobjects/actions/action_open_door.go"
+  id: "box"
+  prototype: "/platformer_creation_kit/building_blocks/gameobjects/obstacles/box.go"
   position {
+    x: 2303.0
+    y: 162.0
+    z: 0.0
+  }
+  rotation {
     x: 0.0
     y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "background"
+  prototype: "/platformer_creation_kit/building_blocks/gameobjects/backgrounds/background.go"
+  position {
+    x: 640.0
+    y: 2299.5674
     z: 0.0
   }
   rotation {
@@ -297,30 +264,10 @@ instances {
   component_properties {
     id: "script"
     properties {
-      id: "object_to_open"
-      value: "/door"
-      type: PROPERTY_TYPE_URL
+      id: "type"
+      value: "night"
+      type: PROPERTY_TYPE_HASH
     }
-  }
-  scale3 {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-  }
-}
-instances {
-  id: "action_change_coins"
-  prototype: "/platformer_creation_kit/building_blocks/gameobjects/actions/action_change_coins.go"
-  position {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
   }
   scale3 {
     x: 1.0
@@ -387,8 +334,48 @@ instances {
   }
 }
 instances {
-  id: "speech_controller"
-  prototype: "/platformer_creation_kit/building_blocks/gameobjects/controllers/speech_controller.go"
+  id: "death_screen"
+  prototype: "/platformer_creation_kit/building_blocks/gameobjects/gui_gameobjects/death_screen.go"
+  position {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "on_screen_controls"
+  prototype: "/platformer_creation_kit/building_blocks/gameobjects/gui_gameobjects/on_screen_controls.go"
+  position {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "particle_factory"
+  prototype: "/platformer_creation_kit/building_blocks/gameobjects/particles/particle_factory.go"
   position {
     x: 0.0
     y: 0.0
@@ -427,28 +414,8 @@ instances {
   }
 }
 instances {
-  id: "particle_factory"
-  prototype: "/platformer_creation_kit/building_blocks/gameobjects/particles/particle_factory.go"
-  position {
-    x: 347.248
-    y: 484.64386
-    z: 0.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale3 {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-  }
-}
-instances {
-  id: "hit_particle"
-  prototype: "/platformer_creation_kit/building_blocks/gameobjects/particles/hit_particle.go"
+  id: "speech_controller"
+  prototype: "/platformer_creation_kit/building_blocks/gameobjects/controllers/speech_controller.go"
   position {
     x: 0.0
     y: 0.0
@@ -467,8 +434,8 @@ instances {
   }
 }
 instances {
-  id: "death_screen"
-  prototype: "/platformer_creation_kit/building_blocks/gameobjects/gui_gameobjects/death_screen.go"
+  id: "win_screen"
+  prototype: "/platformer_creation_kit/building_blocks/gameobjects/gui_gameobjects/win_screen.go"
   position {
     x: 0.0
     y: 0.0
@@ -479,135 +446,6 @@ instances {
     y: 0.0
     z: 0.0
     w: 1.0
-  }
-  scale3 {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-  }
-}
-instances {
-  id: "walking_enemy"
-  prototype: "/platformer_creation_kit/building_blocks/gameobjects/enemies/walking_enemy.go"
-  position {
-    x: 1664.0
-    y: 101.0
-    z: 0.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale3 {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-  }
-}
-instances {
-  id: "box"
-  prototype: "/platformer_creation_kit/building_blocks/gameobjects/obstacles/box.go"
-  position {
-    x: 2303.0
-    y: 162.0
-    z: 0.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale3 {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-  }
-}
-instances {
-  id: "chest"
-  prototype: "/platformer_creation_kit/building_blocks/gameobjects/pickups/chest.go"
-  position {
-    x: 2590.0
-    y: 790.0
-    z: 0.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  component_properties {
-    id: "script"
-    properties {
-      id: "keys_contained"
-      value: "1.0"
-      type: PROPERTY_TYPE_NUMBER
-    }
-  }
-  scale3 {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-  }
-}
-instances {
-  id: "action_trigger1"
-  prototype: "/platformer_creation_kit/building_blocks/gameobjects/triggers/action_trigger.go"
-  position {
-    x: 2661.0
-    y: 876.0
-    z: 0.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.074618354
-    z: 0.0
-    w: 0.9972122
-  }
-  component_properties {
-    id: "script"
-    properties {
-      id: "action_url"
-      value: "/action_open_door1"
-      type: PROPERTY_TYPE_URL
-    }
-    properties {
-      id: "destroy_after_trigger"
-      value: "false"
-      type: PROPERTY_TYPE_BOOLEAN
-    }
-  }
-  scale3 {
-    x: 1.4
-    y: 1.0
-    z: 1.0
-  }
-}
-instances {
-  id: "action_open_door1"
-  prototype: "/platformer_creation_kit/building_blocks/gameobjects/actions/action_open_door.go"
-  position {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  component_properties {
-    id: "script"
-    properties {
-      id: "object_to_open"
-      value: "chest"
-      type: PROPERTY_TYPE_URL
-    }
   }
   scale3 {
     x: 1.0
@@ -690,100 +528,6 @@ embedded_instances {
   children: "coin8"
   children: "coin9"
   children: "potion"
-  data: ""
-  position {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale3 {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-  }
-}
-embedded_instances {
-  id: "doors"
-  children: "door1"
-  data: ""
-  position {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale3 {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-  }
-}
-embedded_instances {
-  id: "door1"
-  children: "action_open_door"
-  children: "action_trigger"
-  children: "door"
-  data: ""
-  position {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale3 {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-  }
-}
-embedded_instances {
-  id: "chests"
-  children: "action_open_door1"
-  children: "action_trigger1"
-  children: "chest"
-  data: ""
-  position {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale3 {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-  }
-}
-embedded_instances {
-  id: "util"
-  children: "action_change_coins"
-  children: "camera"
-  children: "death_screen"
-  children: "hit_particle"
-  children: "particle_factory"
-  children: "player_hud"
-  children: "speech_controller"
   data: ""
   position {
     x: 0.0

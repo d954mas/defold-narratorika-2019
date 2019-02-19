@@ -196,25 +196,25 @@ nodes {
 nodes {
   position {
     x: 0.0
-    y: 0.0
+    y: -75.0
     z: 0.0
     w: 1.0
   }
   rotation {
     x: 0.0
-    y: 0.0
+    y: 180.0
     z: 0.0
     w: 1.0
   }
   scale {
-    x: 1.0
-    y: 1.0
-    z: 1.0
+    x: 0.75
+    y: 0.75
+    z: 0.75
     w: 1.0
   }
   size {
-    x: 140.0
-    y: 140.0
+    x: 1.0
+    y: 1.0
     z: 0.0
     w: 1.0
   }
@@ -224,9 +224,8 @@ nodes {
     z: 1.0
     w: 1.0
   }
-  type: TYPE_BOX
+  type: TYPE_SPINE
   blend_mode: BLEND_MODE_ALPHA
-  texture: ""
   id: "portrait"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -235,18 +234,15 @@ nodes {
   parent: "portrait_bg"
   layer: ""
   inherit_alpha: true
-  slice9 {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 0.0
-  }
   clipping_mode: CLIPPING_MODE_NONE
   clipping_visible: true
   clipping_inverted: false
   alpha: 1.0
   template_node_child: false
-  size_mode: SIZE_MODE_MANUAL
+  size_mode: SIZE_MODE_AUTO
+  spine_scene: "hero"
+  spine_default_animation: "Idle"
+  spine_skin: "15 Archer"
 }
 nodes {
   position {
@@ -739,3 +735,7 @@ nodes {
 material: "/builtins/materials/gui.material"
 adjust_reference: ADJUST_REFERENCE_PARENT
 max_nodes: 512
+spine_scenes {
+  name: "hero"
+  spine_scene: "/platformer_creation_kit/framework/Characters/hero.spinescene"
+}

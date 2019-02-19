@@ -35,7 +35,6 @@ function on_message(self, message_id, message, sender)
 					local obj = factory.create("#key_factory", go.get_position(), vmath.quat(), { start_on_awake = false, start_delay = 1})
 					go.animate(obj, "position", go.PLAYBACK_ONCE_FORWARD, go.get_position() + vmath.vector3(math.random(-200, 200), math.random(100, 200), 0), go.EASING_OUTCUBIC, 0.5)
 				end
-				go.animate("#sprite","tint.w",go.PLAYBACK_ONCE_FORWARD,0,go.EASING_OUTSINE,1,0.2)
 			end
 		end
 	end

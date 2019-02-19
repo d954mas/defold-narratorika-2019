@@ -47,11 +47,6 @@ components {
     value: "2.0"
     type: PROPERTY_TYPE_NUMBER
   }
-  properties {
-    id: "player"
-    value: "false"
-    type: PROPERTY_TYPE_BOOLEAN
-  }
 }
 components {
   id: "movement"

@@ -22,11 +22,6 @@ components {
     value: "169.70687866210938, 203.07913208007812, 0.0"
     type: PROPERTY_TYPE_VECTOR3
   }
-  properties {
-    id: "patrol"
-    value: "true"
-    type: PROPERTY_TYPE_BOOLEAN
-  }
 }
 components {
   id: "health"
@@ -46,11 +41,6 @@ components {
     id: "max_health"
     value: "2.0"
     type: PROPERTY_TYPE_NUMBER
-  }
-  properties {
-    id: "player"
-    value: "false"
-    type: PROPERTY_TYPE_BOOLEAN
   }
 }
 components {
@@ -85,6 +75,11 @@ components {
   properties {
     id: "invulnurable_after_hit"
     value: "false"
+    type: PROPERTY_TYPE_BOOLEAN
+  }
+  properties {
+    id: "dead"
+    value: "true"
     type: PROPERTY_TYPE_BOOLEAN
   }
 }
@@ -203,7 +198,7 @@ embedded_components {
   type: "spinemodel"
   data: "spine_scene: \"/platformer_creation_kit/framework/Characters/hero.spinescene\"\n"
   "default_animation: \"Idle\"\n"
-  "skin: \"06 Knight\"\n"
+  "skin: \"07 Queen\"\n"
   "blend_mode: BLEND_MODE_ALPHA\n"
   "material: \"/builtins/materials/spine.material\"\n"
   ""
@@ -224,7 +219,7 @@ embedded_components {
   type: "spinemodel"
   data: "spine_scene: \"/platformer_creation_kit/framework/Characters/hero.spinescene\"\n"
   "default_animation: \"Idle\"\n"
-  "skin: \"06 Knight\"\n"
+  "skin: \"07 Queen\"\n"
   "blend_mode: BLEND_MODE_ALPHA\n"
   "material: \"/builtins/materials/spine.material\"\n"
   ""

@@ -1,25 +1,5 @@
 name: "default"
 instances {
-  id: "action_change_coins"
-  prototype: "/platformer_creation_kit/building_blocks/gameobjects/actions/action_change_coins.go"
-  position {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale3 {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-  }
-}
-instances {
   id: "background"
   prototype: "/platformer_creation_kit/building_blocks/gameobjects/backgrounds/background.go"
   position {
@@ -32,6 +12,14 @@ instances {
     y: 0.0
     z: 0.0
     w: 1.0
+  }
+  component_properties {
+    id: "script"
+    properties {
+      id: "type"
+      value: "night"
+      type: PROPERTY_TYPE_HASH
+    }
   }
   scale3 {
     x: 1.0
@@ -118,8 +106,8 @@ instances {
   }
 }
 instances {
-  id: "hit_particle"
-  prototype: "/platformer_creation_kit/building_blocks/gameobjects/particles/hit_particle.go"
+  id: "on_screen_controls"
+  prototype: "/platformer_creation_kit/building_blocks/gameobjects/gui_gameobjects/on_screen_controls.go"
   position {
     x: 0.0
     y: 0.0
@@ -138,8 +126,8 @@ instances {
   }
 }
 instances {
-  id: "on_screen_controls"
-  prototype: "/platformer_creation_kit/building_blocks/gameobjects/gui_gameobjects/on_screen_controls.go"
+  id: "particle_factory"
+  prototype: "/platformer_creation_kit/building_blocks/gameobjects/particles/particle_factory.go"
   position {
     x: 0.0
     y: 0.0
@@ -180,6 +168,26 @@ instances {
 instances {
   id: "speech_controller"
   prototype: "/platformer_creation_kit/building_blocks/gameobjects/controllers/speech_controller.go"
+  position {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "win_screen"
+  prototype: "/platformer_creation_kit/building_blocks/gameobjects/gui_gameobjects/win_screen.go"
   position {
     x: 0.0
     y: 0.0

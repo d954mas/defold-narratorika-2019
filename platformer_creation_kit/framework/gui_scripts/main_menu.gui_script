@@ -22,7 +22,7 @@ function init(self)
 					},
 					{
 						node = gui.get_node("story3_btn"),
-						action = function () msg.post("main:/collection_proxy_controller#controller", "load", {proxy = collection_proxies[3]}) end
+						action = function () msg.post("main:/collection_proxy_controller#controller", "load", {proxy = collection_proxies[4]}) end
 					},
 					{
 						node = gui.get_node("story4_btn"),

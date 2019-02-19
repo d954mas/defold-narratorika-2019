@@ -9,4 +9,9 @@ function on_message(self, message_id, message, sender)
    		gui.animate(gui.get_node("shoot"), "color.w", 0, gui.EASING_LINEAR, .25)
    		gui.animate(gui.get_node("jump"), "color.w", 0, gui.EASING_LINEAR, .25)
    	end
+   	if message_id == hash("hide") then
+   		gui.set_enabled(gui.get_node("box"), false);
+   		gui.set_enabled(gui.get_node("shoot"), false);
+   		gui.set_enabled(gui.get_node("jump"), false);
+   	end
 end

@@ -61,6 +61,12 @@ images {
 images {
   image: "/platformer_creation_kit/framework/sprites/window.png"
 }
+images {
+  image: "/platformer_creation_kit/framework/sprites/BG_02.png"
+}
+images {
+  image: "/platformer_creation_kit/framework/sprites/BG_03.jpg"
+}
 margin: 8
 extrude_borders: 2
 inner_padding: 2

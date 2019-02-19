@@ -11,15 +11,6 @@ local option_two_content = nil
 local option_three = nil
 local option_three_content = nil
 
-
---[[local speech_box = nil
-local speech_text = nil
-local option_one = nil
-local option_two = nil
-local option_three = nil
-local portrait = nil
-local display_name = nil--]]
-
 local current_content = nil
 
 require "platformer_creation_kit.framework.modules.game_state"
@@ -43,7 +34,7 @@ function init(self)
 	gui.set_size(header, vzero)
 	gui.set_size(header_text, vzero)
 	gui.set_size(portrait_bg, vzero)
-	gui.set_size(portrait, vzero)
+	gui.set_scale(portrait, vzero)
 	gui.set_size(content_text, vzero)
 	gui.set_size(option_one, vzero)
 	gui.set_size(option_one_content, vzero)
@@ -84,9 +75,12 @@ function on_message(self, message_id, message, sender)
 		
 		gui.set_enabled(portrait_bg, true)
     	gui.animate(portrait_bg, "size", vmath.vector3(150, 150, 0), gui.EASING_LINEAR, 0.1)
-		gui.set_texture(portrait, "hud")
+		--[[gui.set_texture(portrait, "portraits")
     	gui.play_flipbook(portrait, current_content.texture)
-    	gui.animate(portrait, "size", vmath.vector3(140, 140, 0), gui.EASING_LINEAR, 0.1)
+    	gui.animate(portrait, "size", vmath.vector3(140, 140, 0), gui.EASING_LINEAR, 0.1)--]]
+    	gui.set_enabled(portrait, true)
+    	gui.animate(portrait, "scale", vmath.vector3(0.75, 0.75, 0.75), gui.EASING_LINEAR, 0.1)
+    	gui.set_spine_skin(portrait, hash(current_content.texture))
     	
     	
     	gui.set_enabled(header, true)
@@ -145,7 +139,8 @@ function on_message(self, message_id, message, sender)
 		--gui.set_enabled(portrait_bg, false)
 		gui.animate(portrait_bg, "size", vmath.vector3(0, 0, 0), gui.EASING_LINEAR, 0.1)
 		--gui.set_enabled(portrait, false)
-		gui.animate(portrait, "size", vmath.vector3(0, 0, 0), gui.EASING_LINEAR, 0.1)
+		--gui.animate(portrait, "size", vmath.vector3(0, 0, 0), gui.EASING_LINEAR, 0.1)
+		gui.animate(portrait, "scale", vmath.vector3(0, 0, 0), gui.EASING_LINEAR, 0.1)
 		gui.set_enabled(content_text, false)
 		--gui.set_enabled(option_one, false)
 		gui.animate(option_one, "size", vmath.vector3(0, 0, 0), gui.EASING_LINEAR, 0.1)

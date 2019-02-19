@@ -1,7 +1,7 @@
 -- The structure of a speech entry;
 --	- texture - the portrait texture, representing the speaker
 --  - display_name - the name displayed below the portrait
---	- content - the actual line that the texture will 'say'
+--	- content - the actual line that the character will 'say'
 --	- choices (optional) - does the player have any choices to respond to this part of conversation
 --	  = text - the text of the choice
 --	  = next - the next conversation node to get to when this choice is selected 
@@ -11,142 +11,122 @@ speech_content =
 {
 	[1] =
 	{
-		texture = "hero",
-		display_name = "Hero",
-		content = "I'm here to defeat all the monsters!",
+		texture = "23 Zombie Knight",
+		display_name = "Black Knight",
+		content = "Halt! You shall not enter The Master's chamber!",
 		choices =
-		{
+		{ 
 			[1] =
 			{
-				text = "Say something smart.",
+				text = "Step aside, knight! I have no quarrel with you.",
 				next = 2
 			},
-			[2] =
-			{
-				text = "Say something stupid.",
-				next = 3
-			},
-			[3] =
-			{
-				text="Stay silent.",
-				next = nil
-			}
 		},
 		next = nil
 	},
 	[2] =
 	{
-		texture = "hero",
-		display_name = "Hero",
-		content = "1+1 = 2!",
+		texture = "23 Zombie Knight",
+		display_name = "Black Knight",
+		content = "If you come to kill The Master, you shall have to come through me first!",
 		choices =
 		{
 			[1] =
 			{
-				text = "Say something stupid.",
-				next = 3
+				text = "As you wish!",
+				next = nil
 			},
-			[2] =
-			{
-				text="Stay silent.",
-				next = 4
-			}
 		},
 		next = nil
 	},
 	[3] =
 	{
-		texture = "hero",
-		display_name = "Hero",
-		content = "England is good at football.",
+		texture = "06 Knight",
+		display_name = "White Knight",
+		content = "You left me no choice...",
 		choices =
 		{
 			[1] =
 			{
-				text = "Say something smart.",
-				next = 2
-			},
-			[2] =
-			{
-				text="Stay silent.",
+				text = "[Search the body.]",
 				next = 4
-			}
+			},
 		},
 		next = nil
 	},
 	[4] = 
 	{
-		texture = "hero",
-		display_name = "Hero",
-		content = "...",
+		texture = "06 Knight",
+		display_name = "White Knight",
+		content = "[You search the Black Knight's body and find a key.]",
 		next = nil
 	},
 	[5] = 
 	{
-		texture = "hero",
-		display_name = "Hero",
-		content = "I can simply jump over it by using [Space] to jump.",
-		next = nil
+		texture = "23 Zombie Knight",
+		display_name = "Black Knight",
+		content = "Argh! Master!.. I have... failed you...",
+		next = 3
 	},
 	[6] = 
 	{
-		texture = "hero",
-		display_name = "Hero",
-		content = "An enemy! He seems to be unaware of me.",
-		next = 7
+		texture = "21 Zombie Mage",
+		display_name = "Dark Wizard",
+		content = "Turn back now or face your doom, knight.",
+		next = nil
 	},
 	[7] = 
 	{
-		texture = "hero",
-		display_name = "Hero",
-		content = "I can use my bow and arrow to defeat him. By pressing [Enter] I'll fire my bow.",
+		texture = "21 Zombie Mage",
+		display_name = "Dark Wizard",
+		content = "This is your last warning.",
 		next = nil
 	},
 	[8] = 
 	{
-		texture = "hero",
-		display_name = "Hero",
-		content = "That was rather simple, but I should be cautious moving forward.",
-		next = nil
+		texture = "06 Knight",
+		display_name = "White Knight",
+		content = "Dark Wizard! I come to bring justice to you for all the atrocities you've commited!",
+		next = 9
 	},
 	[9] = 
 	{
-		texture = "hero",
-		display_name = "Hero",
-		content = "Ahh! A refreshing health potion. Picking them up heals me and may increase my total health.",
+		texture = "21 Zombie Mage",
+		display_name = "Dark Wizard",
+		content = "All you'll find here is death, knight.",
 		next = nil
 	},
 	[10] = 
 	{
-		texture = "enemy",
-		display_name = "Monster",
-		content = "Rargh!",
-		next = 11
+		texture = "21 Zombie Mage",
+		display_name = "Dark Wizard",
+		content = "How is this possible?! I... fall!..",
+		next = nil
 	},
 	[11] = 
 	{
-		texture = "hero",
-		display_name = "Hero",
-		content = "This one seems to be a tough one! It'll probably take four arrow shots to bring him down!",
+		texture = "10 Mage",
+		display_name = "King's Wizard",
+		content = "My liege! The Queen has been captured by The Dark Wizard! You must save her!",
 		next = nil
 	},
 	[12] = 
 	{
-		texture = "hero",
-		display_name = "Hero",
-		content = "That was the last of them!",
-		next = 13
+		texture = "21 Zombie Mage",
+		display_name = "The Dark Wizard",
+		content = "Prepare to meet your end, king!",
+		next = nil
 	},
 	[13] = 
 	{
-		texture = "hero",
-		display_name = "Hero",
-		content = "The land will be safe for awhile.",
+		texture = "07 Queen",
+		display_name = "The Queen",
+		content = "Took you long enough to come! I was about to finish that mage off myself.",
 		next = nil
 	},
 	[14] =
 	{
-		texture = "enemy",
+		texture = "19 Zombie Archer",
 		display_name = "Merchant",
 		content = "Hey, kid, see the door over there? I have a key that opens it. Bring me three coins, and it's yours.",
 		choices =
@@ -166,42 +146,42 @@ speech_content =
 	},
 	[15] =
 	{
-		texture = "hero",
+		texture = "07 Queen",
 		display_name = "Hero",
 		content = "I'll pass.",
 		next = 16
 	},
 	[16] =
 	{
-		texture = "enemy",
+		texture = "19 Zombie Archer",
 		display_name = "Merchant",
 		content = "Oh, no, *without* the key, you shall *not* pass! Haha!",
 		next = nil
 	},
 	[17] =
 	{
-		texture = "hero",
+		texture = "07 Queen",
 		display_name = "Hero",
 		content = "Here you go.",
 		next = nil
 	},
 	[18] =
 	{
-		texture = "enemy",
+		texture = "19 Zombie Archer",
 		display_name = "Merchant",
 		content = "Hey! Are you trying to scam me! Get back when you have the coin!",
 		next = nil
 	},
 	[19] =
 	{
-		texture = "enemy",
+		texture = "19 Zombie Archer",
 		display_name = "Merchant",
 		content = "One... Two... That's three coins alright! Nice doing business with you, kid! Here's the key.",
 		next = nil
 	},
 	[20] =
 	{
-		texture = "enemy",
+		texture = "19 Zombie Archer",
 		display_name = "Merchant",
 		content = "You again? Scraped the three coins yet?",
 		choices =
@@ -221,16 +201,187 @@ speech_content =
 	},
 	[21] =
 	{
-		texture = "hero",
+		texture = "07 Queen",
 		display_name = "Hero",
 		content = "I'm still working on it.",
 		next = 22
 	},
 	[22] =
 	{
-		texture = "enemy",
+		texture = "19 Zombie Archer",
 		display_name = "Merchant",
 		content = "Well collect them faster, I have another customer interested in the key.",
+		next = nil
+	},
+	[23] =
+	{
+		texture = "09 Royal",
+		display_name = "Apprentice",
+		content = "Whew... Climbing that mountain was no simple task.",
+		next = 24
+	},
+	[24] =
+	{
+		texture = "09 Royal",
+		display_name = "Apprentice",
+		content = "Now I have to find Grandalf the Master Wizard.",
+		next = 25
+	},
+	[25] =
+	{
+		texture = "09 Royal",
+		display_name = "Apprentice",
+		content = "What's with wizards and living in far away remote places?..",
+		next = nil
+	},
+	[26] =
+	{
+		texture = "09 Royal",
+		display_name = "Apprentice",
+		content = "Sheesh... this wizard really doesn't want to be bothered. He placed spike traps all over the place!",
+		next = nil
+	},
+	[27] =
+	{
+		texture = "10 Mage",
+		display_name = "Grandalf the Master Wizard",
+		content = "Who goes there?! Identify yourself!",
+		choices =
+		{
+			[1] =
+			{
+				text = "I'm a student from The Collage of Wizards, I come seeking knowledge!",
+				next = 28
+			},
+			[2] =
+			{
+				text = "I'm a pizza delivery girl, I have your order of three pepperoni pizzas!",
+				next = 29
+			},
+		},
+		next = nil
+	},
+	[28] =
+	{
+		texture = "10 Mage",
+		display_name = "Grandalf the Master Wizard",
+		content = "You come for knowledge, huh? Well then... Behind me is a magical door guarding a passage to my library, to open it you must pass The Trial of the Key.",
+		choices =
+		{
+			[1] =
+			{
+				text = "What's The Trial of the Key?",
+				next = 31
+			},
+		},
+		next = nil
+	},
+	[29] =
+	{
+		texture = "10 Mage",
+		display_name = "Grandalf the Master Wizard",
+		content = "Lies! I did not order any pizzas! State your real business here!",
+		choices =
+		{
+			[1] =
+			{
+				text = "Ok, ok! I'm a student from The Collage of Wizards, I come seeking knowledge!",
+				next = 28
+			},
+			[2] =
+			{
+				text = "You didn't order pizzas? Oh man, not again! I must've mixed up the address!",
+				next = 30
+			},
+		},
+		next = nil
+	},
+	[30] =
+	{
+		texture = "10 Mage",
+		display_name = "Grandalf the Master Wizard",
+		content = "Listen here, girl, stop playing games with me and tell me why are you here!",
+		choices =
+		{
+			[1] =
+			{
+				text = "Ok, ok! I'm a student from The Collage of Wizards, I come seeking knowledge!",
+				next = 28
+			},
+		},
+		next = nil
+	},
+	[31] =
+	{
+		texture = "10 Mage",
+		display_name = "Grandalf the Master Wizard",
+		content = "Actually I was going to the library myself, but forgot the key on the other side of the mountain peak. I'm too lazy to go back and get it.",
+		choices =
+		{
+			[1] =
+			{
+				text = "So the trial is... to simply get the key and bring it here?",
+				next = 32
+			},
+		},
+		next = nil
+	},
+	[32] =
+	{
+		texture = "10 Mage",
+		display_name = "Grandalf the Master Wizard",
+		content = "Yeah, so go and fetch it. I'll let you inside too. But hurry up before I change my mind, you'll find the key by just going over to the eastern side of the peak. Now go!",
+		next = nil
+	},
+	[33] =
+	{
+		texture = "10 Mage",
+		display_name = "Grandalf the Master Wizard",
+		content = "Did you get the key yet?",
+		choices =
+		{
+			[1] =
+			{
+				text = "No, not yet.",
+				next = 34
+			},
+		},
+		next = nil
+	},
+	[34] =
+	{
+		texture = "10 Mage",
+		display_name = "Grandalf the Master Wizard",
+		content = "So what are you waiting for? Go get it!",
+		next = nil
+	},
+	[35] =
+	{
+		texture = "10 Mage",
+		display_name = "Grandalf the Master Wizard",
+		content = "Did you get the key yet?",
+		choices =
+		{
+			[1] =
+			{
+				text = "Yeah, I have it with me.",
+				next = 36
+			},
+		},
+		next = nil
+	},
+	[36] =
+	{
+		texture = "10 Mage",
+		display_name = "Grandalf the Master Wizard",
+		content = "Great we can open the door then! Let's get inside.",
+		next = nil
+	},
+	[37] =
+	{
+		texture = "12 Wanderer",
+		display_name = "Adventurer",
+		content = "The door's locked! I need to find a key somewhere.",
 		next = nil
 	},
 }

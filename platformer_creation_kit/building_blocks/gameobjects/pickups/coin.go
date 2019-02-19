@@ -111,7 +111,7 @@ embedded_components {
 embedded_components {
   id: "pickup_sound"
   type: "sound"
-  data: "sound: \"/platformer_creation_kit/framework/sounds/potion_pickup.ogg\"\n"
+  data: "sound: \"/platformer_creation_kit/framework/sounds/CoinPickUp.wav\"\n"
   "looping: 0\n"
   "group: \"master\"\n"
   "gain: 1.0\n"

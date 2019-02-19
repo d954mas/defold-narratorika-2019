@@ -103,8 +103,8 @@ end
 
 function on_message(self, message_id, message, sender)
 	if message_id == hash("ray_cast_response") then
+		--
 		obstacle_in_front(self)
-		pprint(message_id)
 	end
 	if message_id == hash("change_health") then
 		if message.health_change < 0 then

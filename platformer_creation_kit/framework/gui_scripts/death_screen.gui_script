@@ -12,10 +12,12 @@ function init(self)
 	self.msg = gui.get_node("msg")
 	self.restart = gui.get_node("restart_btn")
 	self.menu = gui.get_node("menu_btn")
+	self.logo = gui.get_node("logo")
     gui.set_enabled(self.bg, false)
     gui.set_enabled(self.msg, false)
     gui.set_enabled(self.restart, false)
     gui.set_enabled(self.menu, false)
+    gui.set_enabled(self.logo, false)
     msg.post("hero#health", "register")
     self.nodes = {
     				{
@@ -38,8 +40,9 @@ function on_message(self, message_id, message, sender)
 	    gui.set_enabled(self.msg, true)
 	    gui.set_enabled(self.restart, true)
 	    gui.set_enabled(self.menu, true)
+	    gui.set_enabled(self.logo, true)
 	    msg.post("hero#health", "unregister")
-	    col = gui.get_color(self.bg);
+	    local col = gui.get_color(self.bg);
 	    col.w = 0
 	    gui.set_color(self.bg, col)
 	    col = gui.get_color(self.msg)
@@ -50,12 +53,16 @@ function on_message(self, message_id, message, sender)
 	    gui.set_color(self.menu, col)
 	    col = gui.get_color(self.restart)
 	    col.w = 0 
+	    gui.set_color(self.logo, col)
+	    col = gui.get_color(self.logo)
+	    col.w = 0 
 	    gui.set_color(self.restart, col)
 	    gui.animate(self.bg, "color.w", 1, gui.EASING_LINEAR, 1)
 	    gui.animate(self.msg, "color.w", 1, gui.EASING_OUTQUAD, 3)
 	    gui.animate(self.msg, "scale", 2, gui.EASING_OUTQUAD, 3)
 	    gui.animate(self.menu, "color.w", 1, gui.EASING_OUTQUAD, 3)
 	    gui.animate(self.restart, "color.w", 1, gui.EASING_OUTQUAD, 3)
+	    gui.animate(self.logo, "color.w", 1, gui.EASING_OUTQUAD, 3)
 	    msg.post(".", "acquire_input_focus")
     end
 end

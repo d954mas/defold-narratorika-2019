@@ -1,17 +1,5 @@
 images {
-  image: "/platformer_creation_kit/framework/sprites/health.png"
-}
-images {
-  image: "/platformer_creation_kit/framework/sprites/empty_health.png"
-}
-images {
   image: "/platformer_creation_kit/framework/sprites/speech_bubble_new.png"
-}
-images {
-  image: "/platformer_creation_kit/framework/sprites/enemy.png"
-}
-images {
-  image: "/platformer_creation_kit/framework/sprites/hero.png"
 }
 images {
   image: "/platformer_creation_kit/framework/sprites/flatDark03.png"
