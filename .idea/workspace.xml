@@ -2,54 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="65936647-7dd1-4e5f-a3e0-fdaf03e3a410" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/input/game.input_binding" beforeDir="false" afterPath="$PROJECT_DIR$/input/game.input_binding" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game.project" beforeDir="false" afterPath="$PROJECT_DIR$/game.project" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/level/level.collection" beforeDir="false" afterPath="$PROJECT_DIR$/level/level.collection" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/example_level/example_level.collection" beforeDir="false" afterPath="$PROJECT_DIR$/main/example_level/example_level.collection" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/example_level/example_zombie_knight.go" beforeDir="false" afterPath="$PROJECT_DIR$/main/example_level/example_zombie_knight.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/example_level/example_zombie_mage.go" beforeDir="false" afterPath="$PROJECT_DIR$/main/example_level/example_zombie_mage.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/example_level/example_zombie_warrior.go" beforeDir="false" afterPath="$PROJECT_DIR$/main/example_level/example_zombie_warrior.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/main.collection" beforeDir="false" afterPath="$PROJECT_DIR$/main/main.collection" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platformer_creation_kit/building_blocks/collections/base_level.collection" beforeDir="false" afterPath="$PROJECT_DIR$/platformer_creation_kit/building_blocks/collections/base_level.collection" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platformer_creation_kit/building_blocks/collections/level.collection" beforeDir="false" afterPath="$PROJECT_DIR$/platformer_creation_kit/building_blocks/collections/level.collection" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platformer_creation_kit/building_blocks/collections/story2.collection" beforeDir="false" afterPath="$PROJECT_DIR$/platformer_creation_kit/building_blocks/collections/story2.collection" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platformer_creation_kit/building_blocks/collections/story3.collection" beforeDir="false" afterPath="$PROJECT_DIR$/platformer_creation_kit/building_blocks/collections/story3.collection" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platformer_creation_kit/building_blocks/collections/story4.collection" beforeDir="false" afterPath="$PROJECT_DIR$/platformer_creation_kit/building_blocks/collections/story4.collection" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platformer_creation_kit/building_blocks/gameobjects/backgrounds/background.go" beforeDir="false" afterPath="$PROJECT_DIR$/platformer_creation_kit/building_blocks/gameobjects/backgrounds/background.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platformer_creation_kit/building_blocks/gameobjects/enemies/walking_enemy.go" beforeDir="false" afterPath="$PROJECT_DIR$/platformer_creation_kit/building_blocks/gameobjects/enemies/walking_enemy.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platformer_creation_kit/building_blocks/gameobjects/gui_gameobjects/on_screen_controls.go" beforeDir="false" afterPath="$PROJECT_DIR$/platformer_creation_kit/building_blocks/gameobjects/gui_gameobjects/on_screen_controls.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/level/tiles.tilemap" beforeDir="false" afterPath="$PROJECT_DIR$/level/tiles.tilemap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/level_copy/level.collection" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/level_copy/tiles.tilemap" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/platformer_creation_kit/building_blocks/gameobjects/hero/hero.go" beforeDir="false" afterPath="$PROJECT_DIR$/platformer_creation_kit/building_blocks/gameobjects/hero/hero.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platformer_creation_kit/building_blocks/gameobjects/obstacles/spikes.go" beforeDir="false" afterPath="$PROJECT_DIR$/platformer_creation_kit/building_blocks/gameobjects/obstacles/spikes.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platformer_creation_kit/building_blocks/gameobjects/pickups/coin.go" beforeDir="false" afterPath="$PROJECT_DIR$/platformer_creation_kit/building_blocks/gameobjects/pickups/coin.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platformer_creation_kit/building_blocks/gameobjects/props/window.go" beforeDir="false" afterPath="$PROJECT_DIR$/platformer_creation_kit/building_blocks/gameobjects/props/window.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platformer_creation_kit/building_blocks/gui/main_menu.gui" beforeDir="false" afterPath="$PROJECT_DIR$/platformer_creation_kit/building_blocks/gui/main_menu.gui" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platformer_creation_kit/content/collection_proxy_content.lua" beforeDir="false" afterPath="$PROJECT_DIR$/platformer_creation_kit/content/collection_proxy_content.lua" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platformer_creation_kit/content/speech_content.lua" beforeDir="false" afterPath="$PROJECT_DIR$/platformer_creation_kit/content/speech_content.lua" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platformer_creation_kit/framework/Characters/_ Defold Character Animation Assets/skeleton.json" beforeDir="false" afterPath="$PROJECT_DIR$/platformer_creation_kit/framework/Characters/_ Defold Character Animation Assets/skeleton.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platformer_creation_kit/framework/Characters/character.atlas" beforeDir="false" afterPath="$PROJECT_DIR$/platformer_creation_kit/framework/Characters/character.atlas" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platformer_creation_kit/framework/atlases/fx.atlas" beforeDir="false" afterPath="$PROJECT_DIR$/platformer_creation_kit/framework/atlases/fx.atlas" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platformer_creation_kit/framework/atlases/hud.atlas" beforeDir="false" afterPath="$PROJECT_DIR$/platformer_creation_kit/framework/atlases/hud.atlas" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platformer_creation_kit/framework/atlases/level.atlas" beforeDir="false" afterPath="$PROJECT_DIR$/platformer_creation_kit/framework/atlases/level.atlas" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platformer_creation_kit/framework/gameobjects/missile.go" beforeDir="false" afterPath="$PROJECT_DIR$/platformer_creation_kit/framework/gameobjects/missile.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platformer_creation_kit/framework/gameobjects/swing.go" beforeDir="false" afterPath="$PROJECT_DIR$/platformer_creation_kit/framework/gameobjects/swing.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platformer_creation_kit/framework/gui/death_screen_gui.gui" beforeDir="false" afterPath="$PROJECT_DIR$/platformer_creation_kit/framework/gui/death_screen_gui.gui" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platformer_creation_kit/framework/gui/health_hud.gui" beforeDir="false" afterPath="$PROJECT_DIR$/platformer_creation_kit/framework/gui/health_hud.gui" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platformer_creation_kit/framework/gui/speech_bubbles.gui" beforeDir="false" afterPath="$PROJECT_DIR$/platformer_creation_kit/framework/gui/speech_bubbles.gui" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platformer_creation_kit/framework/gui_scripts/death_screen.gui_script" beforeDir="false" afterPath="$PROJECT_DIR$/platformer_creation_kit/framework/gui_scripts/death_screen.gui_script" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platformer_creation_kit/framework/gui_scripts/main_menu.gui_script" beforeDir="false" afterPath="$PROJECT_DIR$/platformer_creation_kit/framework/gui_scripts/main_menu.gui_script" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platformer_creation_kit/framework/gui_scripts/on_screen_controls.gui_script" beforeDir="false" afterPath="$PROJECT_DIR$/platformer_creation_kit/framework/gui_scripts/on_screen_controls.gui_script" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platformer_creation_kit/framework/gui_scripts/speech.gui_script" beforeDir="false" afterPath="$PROJECT_DIR$/platformer_creation_kit/framework/gui_scripts/speech.gui_script" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platformer_creation_kit/framework/scripts/actions/action_check_condition.script" beforeDir="false" afterPath="$PROJECT_DIR$/platformer_creation_kit/framework/scripts/actions/action_check_condition.script" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platformer_creation_kit/framework/scripts/actions/action_toggle_trigger.script" beforeDir="false" afterPath="$PROJECT_DIR$/platformer_creation_kit/framework/scripts/actions/action_toggle_trigger.script" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platformer_creation_kit/framework/scripts/arrow.script" beforeDir="false" afterPath="$PROJECT_DIR$/platformer_creation_kit/framework/scripts/arrow.script" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platformer_creation_kit/framework/scripts/background.script" beforeDir="false" afterPath="$PROJECT_DIR$/platformer_creation_kit/framework/scripts/background.script" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platformer_creation_kit/framework/scripts/chest.script" beforeDir="false" afterPath="$PROJECT_DIR$/platformer_creation_kit/framework/scripts/chest.script" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platformer_creation_kit/framework/scripts/coin.script" beforeDir="false" afterPath="$PROJECT_DIR$/platformer_creation_kit/framework/scripts/coin.script" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platformer_creation_kit/framework/scripts/conditions/condition_speech_said.script" beforeDir="false" afterPath="$PROJECT_DIR$/platformer_creation_kit/framework/scripts/conditions/condition_speech_said.script" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platformer_creation_kit/framework/scripts/enemy_ai.script" beforeDir="false" afterPath="$PROJECT_DIR$/platformer_creation_kit/framework/scripts/enemy_ai.script" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platformer_creation_kit/framework/scripts/health.script" beforeDir="false" afterPath="$PROJECT_DIR$/platformer_creation_kit/framework/scripts/health.script" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/platformer_creation_kit/framework/scripts/movement.script" beforeDir="false" afterPath="$PROJECT_DIR$/platformer_creation_kit/framework/scripts/movement.script" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platformer_creation_kit/framework/scripts/triggers/action_trigger.script" beforeDir="false" afterPath="$PROJECT_DIR$/platformer_creation_kit/framework/scripts/triggers/action_trigger.script" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platformer_creation_kit/framework/tile_source/grass.tilesource" beforeDir="false" afterPath="$PROJECT_DIR$/platformer_creation_kit/framework/tile_source/grass.tilesource" afterDir="false" />
     </list>
     <list id="fbac298d-8032-4ddc-a54b-32e67ceb83b1" name="Revert: fixed collisions" comment="" />
     <list id="a4f980d7-8d2f-4679-af52-e59bcb30816e" name="Revert: fixed enemy collisions" comment="" />
@@ -62,10 +22,10 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/platformer_creation_kit/framework/scripts/chest.script">
+        <entry file="file://$PROJECT_DIR$/platformer_creation_kit/framework/scripts/movement.script">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="389">
-              <caret line="37" column="15" selection-start-line="37" selection-start-column="15" selection-end-line="37" selection-end-column="15" />
+            <state relative-caret-position="317">
+              <caret line="73" column="55" selection-start-line="73" selection-start-column="55" selection-end-line="73" selection-end-column="55" />
             </state>
           </provider>
         </entry>
@@ -82,6 +42,10 @@
       <find>ray_cas</find>
       <find>der</find>
       <find>draw_l</find>
+      <find>spine_</find>
+      <find>spinem</find>
+      <find>spinemodel_left</find>
+      <find>spinemodel_left_no_sword</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -92,14 +56,14 @@
       <list>
         <option value="$PROJECT_DIR$/game.project" />
         <option value="$PROJECT_DIR$/platformer_creation_kit/building_blocks/gameobjects/enemies/walking_enemy.go" />
-        <option value="$PROJECT_DIR$/platformer_creation_kit/framework/scripts/movement.script" />
         <option value="$PROJECT_DIR$/level/level.collection" />
         <option value="$PROJECT_DIR$/platformer_creation_kit/framework/scripts/enemy_ai.script" />
         <option value="$PROJECT_DIR$/platformer_creation_kit/framework/scripts/chest.script" />
+        <option value="$PROJECT_DIR$/platformer_creation_kit/framework/scripts/movement.script" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="61" />
     <option name="y" value="3" />
     <option name="width" value="1612" />
@@ -133,20 +97,6 @@
               <item name="narratorika 2019" type="462c0819:PsiDirectoryNode" />
               <item name="platformer_creation_kit" type="462c0819:PsiDirectoryNode" />
               <item name="framework" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="narratorika 2019" type="b2602c69:ProjectViewProjectNode" />
-              <item name="narratorika 2019" type="462c0819:PsiDirectoryNode" />
-              <item name="platformer_creation_kit" type="462c0819:PsiDirectoryNode" />
-              <item name="framework" type="462c0819:PsiDirectoryNode" />
-              <item name="Characters" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="narratorika 2019" type="b2602c69:ProjectViewProjectNode" />
-              <item name="narratorika 2019" type="462c0819:PsiDirectoryNode" />
-              <item name="platformer_creation_kit" type="462c0819:PsiDirectoryNode" />
-              <item name="framework" type="462c0819:PsiDirectoryNode" />
-              <item name="gameobjects" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="narratorika 2019" type="b2602c69:ProjectViewProjectNode" />
@@ -201,12 +151,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17546000" />
+    <option name="totallyTimeSpent" value="19102000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="61" y="3" width="1612" height="948" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27377892" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27377892" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -222,7 +173,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="LuaCheck" order="7" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="9" visible="true" weight="0.32979977" />
+      <window_info anchor="bottom" id="Version Control" order="9" visible="true" weight="0.32979977" />
       <window_info anchor="bottom" id="Database Changes" order="10" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.37102473" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
@@ -287,13 +238,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/platformer_creation_kit/framework/scripts/movement.script">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="261" column="41" lean-forward="true" selection-start-line="261" selection-start-column="41" selection-end-line="261" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/level/level.collection">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="404">
@@ -310,8 +254,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/platformer_creation_kit/framework/scripts/chest.script">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="37" column="15" selection-start-line="37" selection-start-column="15" selection-end-line="37" selection-end-column="15" />
+        <state relative-caret-position="117">
+          <caret line="20" column="33" lean-forward="true" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/platformer_creation_kit/framework/scripts/movement.script">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="73" column="55" selection-start-line="73" selection-start-column="55" selection-end-line="73" selection-end-column="55" />
         </state>
       </provider>
     </entry>

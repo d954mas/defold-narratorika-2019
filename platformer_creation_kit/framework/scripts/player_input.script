@@ -42,7 +42,10 @@ function on_input(self, action_id, action)
 	        	msg.post("#movement", input_jump, { pressed = true})
 	        end
 	    elseif action_id == input_fire then
-	    	msg.post("#class", "shoot", {direction = self.direction})
+			
+			if not go.get("#movement", "no_sword") then
+				msg.post("#class", "shoot", {direction = self.direction})
+			end	
 	    elseif action_id == input_sprint then
 	    	if action.pressed then
 				msg.post("#movement", input_sprint, { pressed = true})

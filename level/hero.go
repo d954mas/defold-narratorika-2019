@@ -162,6 +162,16 @@ components {
     value: "650.0"
     type: PROPERTY_TYPE_NUMBER
   }
+  properties {
+    id: "no_sword_skelet"
+    value: "true"
+    type: PROPERTY_TYPE_BOOLEAN
+  }
+  properties {
+    id: "no_sword"
+    value: "true"
+    type: PROPERTY_TYPE_BOOLEAN
+  }
 }
 embedded_components {
   id: "arrow_factory"
@@ -511,5 +521,47 @@ embedded_components {
     y: 0.0
     z: 0.0
     w: 1.0
+  }
+}
+embedded_components {
+  id: "spinemodel_left_no_sword"
+  type: "spinemodel"
+  data: "spine_scene: \"/platformer_creation_kit/framework/Characters/hero_copy.spinescene\"\n"
+  "default_animation: \"Idle\"\n"
+  "skin: \"05 Knight\"\n"
+  "blend_mode: BLEND_MODE_ALPHA\n"
+  "material: \"/builtins/materials/spine.material\"\n"
+  ""
+  position {
+    x: 13.628327
+    y: 0.0
+    z: 0.025
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+}
+embedded_components {
+  id: "spinemodel_right_no_sword"
+  type: "spinemodel"
+  data: "spine_scene: \"/platformer_creation_kit/framework/Characters/hero_copy.spinescene\"\n"
+  "default_animation: \"Idle\"\n"
+  "skin: \"05 Knight\"\n"
+  "blend_mode: BLEND_MODE_ALPHA\n"
+  "material: \"/builtins/materials/spine.material\"\n"
+  ""
+  position {
+    x: -7.923446
+    y: 0.0
+    z: 0.025
+  }
+  rotation {
+    x: 0.0
+    y: 1.0
+    z: 0.0
+    w: 6.123234E-17
   }
 }

@@ -1,210 +1,10 @@
 name: "default"
 instances {
-  id: "hero"
-  prototype: "/platformer_creation_kit/building_blocks/gameobjects/hero/hero.go"
-  position {
-    x: 858.0
-    y: 269.0
-    z: 0.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale3 {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-  }
-}
-instances {
-  id: "coin"
-  prototype: "/platformer_creation_kit/building_blocks/gameobjects/pickups/coin.go"
-  position {
-    x: 1403.0
-    y: 224.0
-    z: 0.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale3 {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-  }
-}
-instances {
-  id: "coin1"
-  prototype: "/platformer_creation_kit/building_blocks/gameobjects/pickups/coin.go"
-  position {
-    x: 1590.0
-    y: 224.0
-    z: 0.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale3 {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-  }
-}
-instances {
-  id: "coin2"
-  prototype: "/platformer_creation_kit/building_blocks/gameobjects/pickups/coin.go"
-  position {
-    x: 1782.0
-    y: 224.0
-    z: 0.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale3 {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-  }
-}
-instances {
-  id: "coin3"
-  prototype: "/platformer_creation_kit/building_blocks/gameobjects/pickups/coin.go"
-  position {
-    x: 2021.0
-    y: 224.0
-    z: 0.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale3 {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-  }
-}
-instances {
-  id: "coin4"
-  prototype: "/platformer_creation_kit/building_blocks/gameobjects/pickups/coin.go"
-  position {
-    x: 2676.0
-    y: 411.0
-    z: 0.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale3 {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-  }
-}
-instances {
-  id: "coin7"
-  prototype: "/platformer_creation_kit/building_blocks/gameobjects/pickups/coin.go"
-  position {
-    x: 3710.0
-    y: 869.0
-    z: 0.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale3 {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-  }
-}
-instances {
-  id: "coin8"
-  prototype: "/platformer_creation_kit/building_blocks/gameobjects/pickups/coin.go"
-  position {
-    x: 4308.0
-    y: 562.0
-    z: 0.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale3 {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-  }
-}
-instances {
-  id: "coin9"
-  prototype: "/platformer_creation_kit/building_blocks/gameobjects/pickups/coin.go"
-  position {
-    x: 3549.0
-    y: 287.0
-    z: 0.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale3 {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-  }
-}
-instances {
-  id: "potion"
-  prototype: "/platformer_creation_kit/building_blocks/gameobjects/pickups/potion.go"
-  position {
-    x: 3376.0
-    y: 870.0
-    z: 0.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale3 {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-  }
-}
-instances {
   id: "walking_enemy"
   prototype: "/platformer_creation_kit/building_blocks/gameobjects/enemies/walking_enemy.go"
   position {
     x: 1664.0
-    y: 101.0
+    y: 988.0
     z: 0.0
   }
   rotation {
@@ -232,7 +32,7 @@ instances {
   prototype: "/platformer_creation_kit/building_blocks/gameobjects/obstacles/box.go"
   position {
     x: 2303.0
-    y: 162.0
+    y: 1056.0
     z: 0.0
   }
   rotation {
@@ -268,6 +68,126 @@ instances {
       value: "night"
       type: PROPERTY_TYPE_HASH
     }
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "speech_controller"
+  prototype: "/platformer_creation_kit/building_blocks/gameobjects/controllers/speech_controller.go"
+  position {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "win_screen"
+  prototype: "/platformer_creation_kit/building_blocks/gameobjects/gui_gameobjects/win_screen.go"
+  position {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "player_hud"
+  prototype: "/platformer_creation_kit/building_blocks/gameobjects/gui_gameobjects/player_hud.go"
+  position {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "particle_factory"
+  prototype: "/platformer_creation_kit/building_blocks/gameobjects/particles/particle_factory.go"
+  position {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "on_screen_controls"
+  prototype: "/platformer_creation_kit/building_blocks/gameobjects/gui_gameobjects/on_screen_controls.go"
+  position {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "death_screen"
+  prototype: "/platformer_creation_kit/building_blocks/gameobjects/gui_gameobjects/death_screen.go"
+  position {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
   }
   scale3 {
     x: 1.0
@@ -334,11 +254,11 @@ instances {
   }
 }
 instances {
-  id: "death_screen"
-  prototype: "/platformer_creation_kit/building_blocks/gameobjects/gui_gameobjects/death_screen.go"
+  id: "hero"
+  prototype: "/level/hero.go"
   position {
-    x: 0.0
-    y: 0.0
+    x: 334.0
+    y: 1040.0
     z: 0.0
   }
   rotation {
@@ -347,105 +267,13 @@ instances {
     z: 0.0
     w: 1.0
   }
-  scale3 {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-  }
-}
-instances {
-  id: "on_screen_controls"
-  prototype: "/platformer_creation_kit/building_blocks/gameobjects/gui_gameobjects/on_screen_controls.go"
-  position {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale3 {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-  }
-}
-instances {
-  id: "particle_factory"
-  prototype: "/platformer_creation_kit/building_blocks/gameobjects/particles/particle_factory.go"
-  position {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale3 {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-  }
-}
-instances {
-  id: "player_hud"
-  prototype: "/platformer_creation_kit/building_blocks/gameobjects/gui_gameobjects/player_hud.go"
-  position {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale3 {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-  }
-}
-instances {
-  id: "speech_controller"
-  prototype: "/platformer_creation_kit/building_blocks/gameobjects/controllers/speech_controller.go"
-  position {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale3 {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-  }
-}
-instances {
-  id: "win_screen"
-  prototype: "/platformer_creation_kit/building_blocks/gameobjects/gui_gameobjects/win_screen.go"
-  position {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
+  component_properties {
+    id: "movement"
+    properties {
+      id: "no_sword"
+      value: "true"
+      type: PROPERTY_TYPE_BOOLEAN
+    }
   }
   scale3 {
     x: 1.0
@@ -502,7 +330,7 @@ embedded_instances {
   ""
   position {
     x: 0.0
-    y: 0.0
+    y: 880.0
     z: 0.0
   }
   rotation {
@@ -519,15 +347,6 @@ embedded_instances {
 }
 embedded_instances {
   id: "pickups"
-  children: "coin"
-  children: "coin1"
-  children: "coin2"
-  children: "coin3"
-  children: "coin4"
-  children: "coin7"
-  children: "coin8"
-  children: "coin9"
-  children: "potion"
   data: ""
   position {
     x: 0.0
@@ -570,6 +389,33 @@ embedded_instances {
 embedded_instances {
   id: "obstacles"
   children: "box"
+  data: ""
+  position {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+embedded_instances {
+  id: "utils"
+  children: "camera"
+  children: "death_screen"
+  children: "on_screen_controls"
+  children: "particle_factory"
+  children: "player_hud"
+  children: "speech_controller"
+  children: "win_screen"
   data: ""
   position {
     x: 0.0

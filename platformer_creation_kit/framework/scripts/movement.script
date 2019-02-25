@@ -10,7 +10,8 @@ go.property("min_invulnurability_duration", .5)
 go.property("player_alpha", 1)
 go.property("invulnurable_after_hit", true)
 go.property("dead", false)
-
+go.property("no_sword_skelet", false)
+go.property("no_sword", true)
 -- pre-hashing ids improves performance
 local msg_contact_point_response = hash("contact_point_response")
 local msg_trigger_response = hash("trigger_response")
@@ -66,7 +67,12 @@ function init(self)
     self.dead = false;
     self.is_spine_animated = true
     if self.is_spine_animated then
-    	msg.post("#spinemodel_left", "disable") 
+    	msg.post("#spinemodel_left", "disable")
+		if self.no_sword_skelet then
+			msg.post("#spinemodel_right", self.no_sword and "disable" or "enable")
+			msg.post("#spinemodel_left_no_sword", "disable")
+			msg.post("#spinemodel_right_no_sword", not self.no_sword and "disable" or "enable")
+		end
     end
     self.touching_ladder = false;
     self.moving_on_ladder = false;
@@ -87,13 +93,12 @@ end
 local function play_animation(self, anim, play_mode)
     if self.anim ~= anim then
     	if self.is_spine_animated then
-    		if self.animation_lock then
-    			spine.play("#spinemodel_left", anim, play_mode, 0.25, function (self) self.animation_lock = false end)
-    			spine.play("#spinemodel_right", anim, play_mode, 0.25,  function (self) self.animation_lock = false end)
-    		else
-    			spine.play("#spinemodel_left", anim, play_mode, 0.25)
-    			spine.play("#spinemodel_right", anim, play_mode, 0.25)
-    		end
+				spine.play("#spinemodel_left", anim, play_mode, 0.25, self.animation_lock  and function (self) self.animation_lock = false end)
+				spine.play("#spinemodel_right", anim, play_mode, 0.25,  self.animation_lock  and function (self) self.animation_lock = false end)
+				if self.no_sword_skelet then
+					spine.play("#spinemodel_left_no_sword", anim, play_mode, 0.25, self.animation_lock and function (self) self.animation_lock = false end)
+					spine.play("#spinemodel_right_no_sword", anim, play_mode, 0.25, self.animation_lock  and function (self) self.animation_lock = false end)
+				end
     	else
     		msg.post("#sprite", "play_animation", {id = anim})
     	end
@@ -110,11 +115,26 @@ local function update_animations(self)
 	else
 		if self.move_input ~= 0 then
 			if self.move_input > 0 then
-				msg.post("#spinemodel_right", "enable")
-				msg.post("#spinemodel_left", "disable") 
+				if self.no_sword_skelet then
+					msg.post("#spinemodel_right_no_sword", self.no_sword  and "enable" or "disable")
+					msg.post("#spinemodel_left_no_sword", "disable")
+					msg.post("#spinemodel_right", not self.no_sword  and "enable" or "disable")
+					msg.post("#spinemodel_left", "disable")
+				else
+					msg.post("#spinemodel_right", "enable")
+					msg.post("#spinemodel_left", "disable")
+				end
+
 			else
-				msg.post("#spinemodel_right", "disable")
-				msg.post("#spinemodel_left", "enable")
+				if self.no_sword_skelet then
+					msg.post("#spinemodel_right_no_sword", "disable")
+					msg.post("#spinemodel_left_no_sword", self.no_sword  and "enable" or "disable")
+					msg.post("#spinemodel_right", "disable")
+					msg.post("#spinemodel_left", not self.no_sword  and "enable" or "disable")
+				else
+					msg.post("#spinemodel_right", "disable")
+					msg.post("#spinemodel_left", "enable")
+				end
 			end
 		end
 	end
@@ -126,6 +146,10 @@ local function update_animations(self)
 				else
 					spine.cancel("#spinemodel_right")
 					spine.cancel("#spinemodel_left")
+					if self.no_sword_skelet then
+						spine.cancel("#spinemodel_left_no_sword")
+						spine.cancel("#spinemodel_right_no_sword")
+					end
 					self.anim = nil
 				end
 	    	elseif self.ground_contact then
@@ -171,7 +195,11 @@ local function update_defold(self, dt)
 	    		sprite.set_constant("#sprite", "tint", vmath.vector4(1,1,1, self.player_alpha))
 	    	else
 	    		spine.set_constant("#spinemodel_left", "tint", vmath.vector4(1,1,1, self.player_alpha))
-	    		spine.set_constant("#spinemodel_right", "tint", vmath.vector4(1,1,1, self.player_alpha))
+				spine.set_constant("#spinemodel_right", "tint", vmath.vector4(1,1,1, self.player_alpha))
+				if self.no_sword_skelet then
+					spine.set_constant("#spinemodel_left_no_sword", "tint", vmath.vector4(1,1,1, self.player_alpha))
+					spine.set_constant("#spinemodel_right_no_sword", "tint", vmath.vector4(1,1,1, self.player_alpha))
+				end
 	    	end
 	    end
 	    local speed_diff = target_speed - self.velocity.x
@@ -280,6 +308,10 @@ local function handle_obstacle_contact_defold(self, data)
 		        else
 		        	spine.set_constant("#spinemodel_left", "tint", vmath.vector4(1,1,1,1))
 		        	spine.set_constant("#spinemodel_right", "tint", vmath.vector4(1,1,1,1))
+					if self.no_sword_skelet then
+						spine.set_constant("#spinemodel_left_no_sword", "tint", vmath.vector4(1,1,1, self.player_alpha))
+						spine.set_constant("#spinemodel_right_no_sword", "tint", vmath.vector4(1,1,1, self.player_alpha))
+					end
 		        end
 	        end
 	        self.velocity.y = 0
