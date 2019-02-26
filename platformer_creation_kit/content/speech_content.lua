@@ -7,8 +7,63 @@
 --	  = next - the next conversation node to get to when this choice is selected 
 --	- next - the index of the next speech data in this table, nil if that's the end of the speech sequence
 
+local HERO_NAME = "Player"
 speech_content =
 {
+
+	[1001] = --block back way
+	{
+		texture = "05 Knight",
+		display_name = HERO_NAME,
+		content = "Мне нужно в город. Я не вернусь обратно, пока не стану рыцарем",
+		choices =
+		{
+			[1] =
+			{
+				text = "Вперед",
+			},
+		},
+	},
+	[1002] =
+	{
+		texture = "05 Knight",
+		display_name = HERO_NAME,
+		content = "Город близко",
+		choices =
+		{
+			[1] =
+			{
+				text = "Вперед",
+			},
+		},
+	},
+	[1003] =
+	{
+		texture = "05 Knight",
+		display_name = "Стражник",
+		content = "Ты кто такой?",
+		choices =
+		{
+			[1] = { text = "Имя 1",next = 1004 },
+			[2] = { text = "Имя 2",next = 1004 },
+			[3] = { text = "Имя 3",next = 1004 },
+		},
+	},
+
+	[1004] =
+	{
+		texture = "05 Knight",
+		display_name = "Стражник",
+		content = "Проходи",
+		choices =
+		{
+			[1] =
+			{
+				text = "Ок",
+			},
+		},
+	},
+
 	[1] =
 	{
 		texture = "23 Zombie Knight",

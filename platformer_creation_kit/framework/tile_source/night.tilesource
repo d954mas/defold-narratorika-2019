@@ -1,4 +1,4 @@
-image: "/platformer_creation_kit/framework/sprites/night_tileset.png"
+image: "/platformer_creation_kit/framework/sprites/grass_tileset.png"
 tile_width: 140
 tile_height: 140
 tile_margin: 0

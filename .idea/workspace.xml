@@ -3,9 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="65936647-7dd1-4e5f-a3e0-fdaf03e3a410" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platformer_creation_kit/framework/fonts/speech.font" beforeDir="false" afterPath="$PROJECT_DIR$/platformer_creation_kit/framework/fonts/speech.font" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platformer_creation_kit/framework/fonts/speech_header.font" beforeDir="false" afterPath="$PROJECT_DIR$/platformer_creation_kit/framework/fonts/speech_header.font" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platformer_creation_kit/framework/gui_scripts/speech.gui_script" beforeDir="false" afterPath="$PROJECT_DIR$/platformer_creation_kit/framework/gui_scripts/speech.gui_script" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/level/level.collection" beforeDir="false" afterPath="$PROJECT_DIR$/level/level.collection" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/level/tiles.tilemap" beforeDir="false" afterPath="$PROJECT_DIR$/level/tiles.tilemap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platformer_creation_kit/building_blocks/gameobjects/triggers/action_trigger.go" beforeDir="false" afterPath="$PROJECT_DIR$/platformer_creation_kit/building_blocks/gameobjects/triggers/action_trigger.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platformer_creation_kit/content/speech_content.lua" beforeDir="false" afterPath="$PROJECT_DIR$/platformer_creation_kit/content/speech_content.lua" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platformer_creation_kit/framework/scripts/conditions/condition_speech_said.script" beforeDir="false" afterPath="$PROJECT_DIR$/platformer_creation_kit/framework/scripts/conditions/condition_speech_said.script" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platformer_creation_kit/framework/scripts/triggers/action_trigger.script" beforeDir="false" afterPath="$PROJECT_DIR$/platformer_creation_kit/framework/scripts/triggers/action_trigger.script" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platformer_creation_kit/framework/tile_source/night.tilesource" beforeDir="false" afterPath="$PROJECT_DIR$/platformer_creation_kit/framework/tile_source/night.tilesource" afterDir="false" />
     </list>
     <list id="fbac298d-8032-4ddc-a54b-32e67ceb83b1" name="Revert: fixed collisions" comment="" />
     <list id="a4f980d7-8d2f-4679-af52-e59bcb30816e" name="Revert: fixed enemy collisions" comment="" />
@@ -20,8 +24,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/platformer_creation_kit/content/speech_content.lua">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="241">
-              <caret line="109" column="26" selection-start-line="109" selection-start-column="26" selection-end-line="109" selection-end-column="26" />
+            <state relative-caret-position="192">
+              <caret line="48" column="49" lean-forward="true" selection-start-line="48" selection-start-column="49" selection-end-line="48" selection-end-column="49" />
             </state>
           </provider>
         </entry>
@@ -43,6 +47,8 @@
       <find>spinemodel_left</find>
       <find>spinemodel_left_no_sword</find>
       <find>my l</find>
+      <find>speech_e</find>
+      <find>post_event</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -57,15 +63,17 @@
         <option value="$PROJECT_DIR$/platformer_creation_kit/framework/scripts/enemy_ai.script" />
         <option value="$PROJECT_DIR$/platformer_creation_kit/framework/scripts/chest.script" />
         <option value="$PROJECT_DIR$/platformer_creation_kit/framework/scripts/movement.script" />
+        <option value="$PROJECT_DIR$/platformer_creation_kit/framework/scripts/conditions/condition_speech_said.script" />
+        <option value="$PROJECT_DIR$/platformer_creation_kit/framework/scripts/speech_controller.script" />
         <option value="$PROJECT_DIR$/platformer_creation_kit/content/speech_content.lua" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="76" />
-    <option name="y" value="79" />
+    <option name="y" value="78" />
     <option name="width" value="1612" />
-    <option name="height" value="948" />
+    <option name="height" value="949" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -114,8 +122,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -152,17 +160,18 @@
       <workItem from="1549484208820" duration="1758000" />
       <workItem from="1549710390455" duration="13520000" />
       <workItem from="1550396236004" duration="2084000" />
+      <workItem from="1551208527345" duration="634000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19427000" />
+    <option name="totallyTimeSpent" value="24084000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="61" y="3" width="1612" height="948" extended-state="0" />
+    <frame x="76" y="78" width="1612" height="949" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27377892" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2769923" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -178,7 +187,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="LuaCheck" order="7" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="9" visible="true" weight="0.32979977" />
+      <window_info anchor="bottom" id="Version Control" order="9" visible="true" weight="0.32941177" />
       <window_info anchor="bottom" id="Database Changes" order="10" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.37102473" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
@@ -278,10 +287,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/platformer_creation_kit/framework/scripts/conditions/condition_speech_said.script">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/platformer_creation_kit/framework/scripts/speech_controller.script">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="10" column="3" lean-forward="true" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/platformer_creation_kit/content/speech_content.lua">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="109" column="26" selection-start-line="109" selection-start-column="26" selection-end-line="109" selection-end-column="26" />
+        <state relative-caret-position="192">
+          <caret line="48" column="49" lean-forward="true" selection-start-line="48" selection-start-column="49" selection-end-line="48" selection-end-column="49" />
         </state>
       </provider>
     </entry>
