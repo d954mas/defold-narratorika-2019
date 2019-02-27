@@ -46,14 +46,6 @@ instances {
     z: 0.0
     w: 1.0
   }
-  component_properties {
-    id: "script"
-    properties {
-      id: "action_url"
-      value: "intro_speech"
-      type: PROPERTY_TYPE_URL
-    }
-  }
   scale3 {
     x: 1.0
     y: 1.0
@@ -74,14 +66,6 @@ instances {
     z: 0.0
     w: 1.0
   }
-  component_properties {
-    id: "script"
-    properties {
-      id: "action_url"
-      value: "say_spikes"
-      type: PROPERTY_TYPE_URL
-    }
-  }
   scale3 {
     x: 1.0
     y: 1.0
@@ -101,14 +85,6 @@ instances {
     y: 0.0
     z: 0.0
     w: 1.0
-  }
-  component_properties {
-    id: "script"
-    properties {
-      id: "action_url"
-      value: "grandalf_greet"
-      type: PROPERTY_TYPE_URL
-    }
   }
   scale3 {
     x: 1.0
@@ -534,24 +510,6 @@ instances {
     y: 0.0
     z: 0.0
     w: 1.0
-  }
-  component_properties {
-    id: "script"
-    properties {
-      id: "action_url"
-      value: "has_key"
-      type: PROPERTY_TYPE_URL
-    }
-    properties {
-      id: "destroy_after_trigger"
-      value: "false"
-      type: PROPERTY_TYPE_BOOLEAN
-    }
-    properties {
-      id: "enabled"
-      value: "false"
-      type: PROPERTY_TYPE_BOOLEAN
-    }
   }
   scale3 {
     x: 1.0
